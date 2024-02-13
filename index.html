@@ -11,6 +11,7 @@
       background-color: #0F101A;
       font-family: Arial, sans-serif;
       color: #FFFFFF;
+      font-size: 16px; /* Default font size for the entire body */
     }
     
     .container {
@@ -23,10 +24,14 @@
     .content {
       display: flex;
       max-width: 800px;
+      flex-wrap: wrap;
     }
     
-    .image-container {
-      flex: 1;
+    .image-container,
+    .links,
+    .additional-links,
+    .additional-links2,
+    .additional-links3 {
       padding: 20px;
     }
     
@@ -36,22 +41,32 @@
       display: block;
     }
     
-    .links {
-      flex: 1;
-      padding: 20px;
-    }
-    
     .link-item {
       margin-bottom: 10px;
     }
     
+    /* Adjust the font size for links */
     .link-item a {
       color: #A151D3;
       text-decoration: none;
+      font-size: 20px; /* Change the font size for links */
     }
     
     .link-item a:hover {
       text-decoration: underline;
+    }
+    
+    @media (max-width: 600px) {
+      .content {
+        flex-direction: column;
+      }
+      .image-container,
+      .links,
+      .additional-links,
+      .additional-links2,
+      .additional-links3 {
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -59,12 +74,32 @@
   <div class="container">
     <div class="content">
       <div class="image-container">
+        <!-- Insert your local image here -->
         <img src="arch.png" alt="Your Image">
       </div>
       <div class="links"><a>@</a>
-        <div class="link-item"><a href="https://github.com/">github</a></div>
-        <div class="link-item"><a href="#">Link 2</a></div>
-        <div class="link-item"><a href="#">Link 3</a></div>
+        <div class="link-item"><a href="https://github.com/">gitHub</a></div>
+        <div class="link-item"><a href="https://stackoverflow.com/">stackOverFlow</a></div>
+        <div class="link-item"><a href="https://chat.openai.com/">chatGPT</a></div>
+        <div class="link-item"><a href="https://www.freecodecamp.org/learn">freeCodeCamp</a></div>
+        <!-- Add more link items as needed -->
+      </div>
+      <div class="additional-links"><a>media</a>
+        <div class="link-item"><a href="https://www.youtube.com/">youtube</a></div>
+        <div class="link-item"><a href="https://www.twitch.tv/">twitch</a></div>
+        <!-- Add more link items as needed --> 
+
+      <div class="additional-links2"><a>⮝</a>
+        <div class="link-item"><a href="https://wiki.archlinux.org/">archWiki</a></div>
+        <div class="link-item"><a href="https://archlinux.org/packages/">AUR</a></div>
+        <div class="link-item"><a href="https://www.reddit.com/r/unixporn/">unixPorn</a></div>
+        <!-- Add more link items as needed -->
+      </div>
+      <div class="additional-links3"><a>news</a>
+        <div class="link-item"><a href="https://techcrunch.com/">techCrunch</a></div>
+        <div class="link-item"><a href="https://app.daily.dev/">daily.dev</a></div>
+        <div class="link-item"><a href="https://kotaku.com/">kotaku</a></div>
+        <div class="link-item"><a href="https://apnews.com/">ap</a></div>
         <!-- Add more link items as needed -->
       </div>
     </div>
