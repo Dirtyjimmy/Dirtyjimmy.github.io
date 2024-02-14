@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Font";
-    src: url("./JetBrains.ttf");
+    src: url("./Lib.ttf");
   }
   
   html {
@@ -12,8 +12,8 @@
   
   body {
     display: flex;
-    color: #A151D3;
-    background: #0F101A;
+    color: #282828;
+    background: #282828;
     margin-right: 9em;
     padding: 1em;
     font-family: Font;
@@ -22,7 +22,7 @@
   img {
     height: auto;
     width: auto;
-    margin-right: 2em;
+    margin-right: 10em;
     border-radius: 10px;
     box-shadow: none;
   }
@@ -36,12 +36,13 @@
   }
   
   h2 {
-    font-size: 1.6em;
-    font-weight: 600;
+    font-size: 2em;
+    font-weight: 400;
     color: #ffffff;
     grid-column: 1/-1;
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+    margin-top: -1em;
     font-family: fantasy;
   }
   
@@ -59,21 +60,21 @@
   
   li:first-child {
     display: inline-block;
-    color: #ffffff;
-    font-size: 1.2em;
+    color: #EA7D1E;
+    font-size: 2em;
     font-weight: 600;
     text-align: center;
     line-height: 2em;
-    margin-left: 4em;
+    margin-left: 2em;
   }
   
   a {
-    color: #A151D3;
+    color: #689D6A;
     font-size: 1.2em;
     text-decoration: none;
   }
   
   a:hover {
-    color: #a771c9;
+    color: #27AE60;
     font-style: none;
   }
